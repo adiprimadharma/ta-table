@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Dashboard</title>
+    <link rel="stylesheet" href="asset/plugin-css/dv3-bootstrap3-min.css">    
+    <!-- <link rel="stylesheet" href="asset/plugin-css/jquery.jscrollpane.css"> -->
+    <link rel="stylesheet" href="asset/plugin-css/select2-min.css">
+    <link rel="stylesheet" href="asset/plugin-css/ta-general.css">
+    <link rel="stylesheet" href="asset/plugin-css/ta-icon.css">
+    <link rel="stylesheet" href="asset/plugin-css/ta-shorthand.css">    
+    <!-- <link rel="stylesheet" href="asset/plugin-css/ta-table-new.css"> -->
+    <link rel="stylesheet" href="asset/plugin-css/ta-dashboard.css">
+
+    <script src="asset/plugin-js/jquery-3.2.1.min.js"></script>
+    <style>
+         /*for in-case example*/
+        .table-dashboard .table-content {
+            width:150px;
+        }
+        .content-container {
+            margin: 185px;
+            padding: 24px;
+            min-height: 150vh;
+        }
+        input[type=checkbox] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div id="table-dashboard"  class="table-dashboard"></div>
+            <!-- <div id="table-dashboard" class="table-dashboard">
+                <div class="table-header-row">
+                    <div class="table-content stay nama1" data-col-name="nama1">
+                        Andhika Setiadi
+                    </div>
+                    <div class="table-content stay nama2" data-col-name="nama2">
+                        Adi Umbas Primadarma
+                    </div>
+                    <div class="table-content stay nama3" data-col-name="nama3">
+                        Annur Syahdyanto
+                    </div>
+                    <div class="scroll-row not-last">
+                        <div style="display:flex">
+                            <div class="table-content nama6" data-col-name="nama6">
+                                Andhika Setiadi
+                            </div>
+                            <div class="table-content nama7" data-col-name="nama7">
+                                Adi Umbas Primadarma
+                            </div>
+                            <div class="table-content nama8" data-col-name="nama8">
+                                Annur Syahdyanto
+                            </div>
+                            <div class="table-content nama9" data-col-name="nama9">
+                                Hilmi Salim
+                            </div>
+                            <div class="table-content nama10" data-col-name="nama10">
+                                Dwiky Arhansa
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="table__wrapper">
+                    <div class="table-content-row">
+                        <div class="table-content stay nama1">
+                            Andhika Setiadi
+                        </div>
+                        <div class="table-content stay nama2">
+                            Adi Umbas Primadarma
+                        </div>
+                        <div class="table-content stay nama3">
+                            Annur Syahdyanto
+                        </div>
+                        <div class="scroll-row not-last">
+                            <div style="display:flex">
+                                <div class="table-content nama6">
+                                    Andhika Setiadi
+                                </div>
+                                <div class="table-content nama7">
+                                    Adi Umbas Primadarma
+                                </div>
+                                <div class="table-content nama8">
+                                    Annur Syahdyanto
+                                </div>
+                                <div class="table-content nama9">
+                                    Hilmi Salim
+                                </div>
+                                <div class="table-content nama10">
+                                    Dwiky Arhansa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-content-row">
+                        <div class="table-content stay nama1">
+                            Andhika Setiadi
+                        </div>
+                        <div class="table-content stay nama2">
+                            Adi Umbas Primadarma
+                        </div>
+                        <div class="table-content stay nama3">
+                            Annur Syahdyanto
+                        </div>
+                        <div class="scroll-row not-last">
+                            <div style="display:flex">
+                                <div class="table-content nama6">
+                                    Andhika Setiadi
+                                </div>
+                                <div class="table-content nama7">
+                                    Adi Umbas Primadarma
+                                </div>
+                                <div class="table-content nama8">
+                                    Annur Syahdyanto
+                                </div>
+                                <div class="table-content nama9">
+                                    Hilmi Salim
+                                </div>
+                                <div class="table-content nama10">
+                                    Dwiky Arhansa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-content-row">
+                        <div class="table-content stay nama1">
+                            Andhika Setiadi
+                        </div>
+                        <div class="table-content stay nama2">
+                            Adi Umbas Primadarma
+                        </div>
+                        <div class="table-content stay nama3">
+                            Annur Syahdyanto
+                        </div>
+                        <div class="scroll-row last">
+                            <div style="display:flex">
+                                <div class="table-content nama6">
+                                    Andhika Setiadi
+                                </div>
+                                <div class="table-content nama7">
+                                    Adi Umbas Primadarma
+                                </div>
+                                <div class="table-content nama8">
+                                    Annur Syahdyanto
+                                </div>
+                                <div class="table-content nama9">
+                                    Hilmi Salim
+                                </div>
+                                <div class="table-content nama10">
+                                    Dwiky Arhansa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <hr>
+            <div id="table-dashboard2" class="table-dashboard"></div>
+        
+        <div id="pagination">
+            <div class="row m-0">
+                <div class="col-md-6 mt-20 p-0">
+                    <small>Daftar Promo&nbsp;<b>1 - 20</b>&nbsp;dari&nbsp;<b>30</b></small>
+                </div>
+                <div id="p-container" class="col-md-6 text-right p-0">
+                    <div class="pagination">
+                        <ul>
+                            <li class="active">
+                                <a href="http://172.31.52.44/v2/manage/product?language=id-ID&amp;page=1" class="active" data-page="1">1</a>
+                            </li>
+                            <li>
+                                <a href="http://172.31.52.44/v2/manage/product?language=id-ID&amp;page=2" data-page="2">2</a>
+                            </li>
+                            <li>
+                                <a href="http://172.31.52.44/v2/manage/product?language=id-ID&amp;page=2" data-page="2"><i class="ta-icon ta-icon-point-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+    <script src="asset/plugin-js/dv3-bootstrap-min.js"></script>
+    <script src="asset/plugin-js/select2.min.js"></script>
+    <!-- <script src="asset/plugin-js/jquery.jscrollpane.min.js"></script>
+    <script src="asset/plugin-js/jquery.mousewheel.js"></script>
+    <script src="asset/plugin-js/element-resize-detector.min.js"></script> 
+    <script src="asset/plugin-js/ta-table-new.js"></script>   -->
+    <!-- <link rel="stylesheet" href="build/vendor.css">
+    <link rel="stylesheet" href="build/tatable.css"> -->
+    <!-- <script src="build/vendor.js"></script>
+    <script src="build/tatable~vendor.js"></script>  -->
+    <script src="build/tatable.js"></script> 
+    
+<script>
+ $(document).ready(function(){
+        var checkBox = '<input type="checkbox" class="checklist" id="checkBox-16831344" data-index="0" data-id="16831344"><label for="checkBox-16831344" class="checklist-label"></label>';
+        var statBtn = '<i class="ta-icon ta-icon-circle active-stat mr-10"></i><span>Aktif</span><i class="ta-icon ta-icon-tooltip info-not-show tooltip-action-trigger hide" data-type="product" data-id="16831344"></i>'
+        var htmlFilterHeader = '<div class="tp-control-block"> <div class="pull-left" style="line-height:15px;"> <div class="input-append mr-20 pull-left"> <input name="keyword" id="search-input" type="text" value="" placeholder="Cari Promo Produk" class="w-150 pull-left search-input" autocomplete="off"> <input type="hidden" value="" id="hidden-search"> <button type="submit" id="search-button" class="search-button"> <i class="ta-icon ta-icon-search"></i> </button> </div> <div class="select-status pull-left mr-30 relative"> <select class="selectBox mb-0 select-custom filter-select select2-hidden-accessible" id="status-input" tabindex="-1" aria-hidden="true"> <option value="0" data-gtm-label="semua status">Semua Status</option> <option value="1" data-gtm-label="aktif">Aktif</option> <option value="2" data-gtm-label="tidak tampil">Tidak Tampil</option> <option value="3" data-gtm-label="tidak aktif">Tidak Aktif</option> </select> </div> <div class="select-group pull-left relative"> <select class="selectBox mr-5 mb-0 select-custom select2-hidden-accessible" id="select-item-group" tabindex="-1" aria-hidden="true"> <option></option><option value="-2">Di Luar Grup</option></select> </div> </div> <div class="pull-right"> <a href="/v2/manage/product/create?ref=v2&amp;type=2" class="button-create navigate"> <i class="ta-icon ta-icon-plus"></i> Tambah Promo </a> </div> <div class="pull-right edit-group" style="display: none"> <a class="edit-btn-toggle ghost-button lh-18" data-box-id="edit-group" data-edit-type="group"><i class="ta-icon ta-icon-edit fs-11 mr-10"></i>Edit Grup</a> <span class="muted inline-block mr-10 ml-5">|</span> </div> <div class="filter-action-wrapper"> <div class="col-md-12"> <div class="select-setting pull-left"> <span class="inline-block pull-left white mt-10 mr-10"> <span class="selected-count">2</span> Produk Terpilih: </span> <a id="product-on" class="action-group bulk-on btn-filter-action btn-manage pull-left">On</a> <a id="product-off" class="action-group bulk-off btn-filter-action btn-manage pull-left ml-10">Off</a> <span class="divider-filter-action ml-15 mr-15"></span> <a id="product-move-group" class="action-group btn-filter-action btn-manage pull-left" data-popup-open="popup--pindah-group-promo">Pindah Grup</a> <span class="divider-filter-action ml-15"></span> <a id="product-delete" class="action-group btn-filter-action btn-manage pull-left ml-15" data-popup-open="popup--hapus-promo">Hapus</a> </div> </div> </div> <div class="clear-b"></div> </div>';
+        var dataset = [
+            [checkBox,statBtn,'datacol3-row1','datacol4-row1','datacol5-row1','datacol6-row1','datacol7-row1','datacol8-row1'],
+            [checkBox,statBtn,'datacol3-row2','datacol4-row2','datacol5-row2','datacol6-row2','datacol7-row2','datacol8-row2'],
+            [checkBox,statBtn,'datacol3-row3','datacol4-row3','datacol5-row3','datacol6-row3','datacol7-row3','datacol8-row3'],
+        ]
+        $('#table-dashboard').tatable({
+            fixedColumns: 2,
+            data: dataset,
+            customHeader: [
+                {className: 'table-header-row--filter', html: htmlFilterHeader},
+            ],
+            columns: [
+                {title: checkBox, className: 'checklist', colIndex: 0, fixedWidth: true},
+                {title: 'Title Kolom-7', className: 'Table1classNameCol7', colIndex: 6, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 7'},
+                {title: 'Title Kolom-3', className: 'Table1classNameCol3', colIndex: 2, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 3'},
+                {title: 'Title Kolom-4 <div style="color: rgba(0,0,0,.38)">asdbaskbdasjdbas</div>', className: 'Table1classNameCol4', colIndex: 3, sort: true, tooltip: false},
+                {title: 'Title Kolom-2', className: 'status', colIndex: 1, sort: true, tooltip: true, fixedWidth: true, dataTooltip: 'test Tooltip column 5'},
+                {title: 'Title Kolom-8', className: 'Table1classNameCol8', colIndex: 7, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 8'},
+                {title: 'Title Kolom-5', className: 'Table1classNameCol5', colIndex: 4, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 5'},
+                {title: 'Title Kolom-6', className: 'Table1classNameCol6', colIndex: 5, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 6'},
+            ]
+        });
+
+        // $('#table-dashboard2').fixedHeadFoot({
+        //     fixedColumns: 2,
+        //     data: dataset,
+        //     customHeader: [
+        //         {className: 'table-header-row--filter', html: htmlFilterHeader},
+        //     ],
+        //     columns: [
+        //         {title: checkBox, className: 'checklist', colIndex: 0, fixedWidth: true},
+        //         {title: 'Title Kolom-7', className: 'Table1classNameCol7', colIndex: 6, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 7'},
+        //         {title: 'Title Kolom-3', className: 'Table1classNameCol3', colIndex: 2, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 3'},
+        //         {title: 'Title Kolom-4 <div style="color: rgba(0,0,0,.38)">asdbaskbdasjdbas</div>', className: 'Table1classNameCol4', colIndex: 3, sort: true, tooltip: false},
+        //         {title: 'Title Kolom-2', className: 'status', colIndex: 1, sort: true, tooltip: true, fixedWidth: true, dataTooltip: 'test Tooltip column 5'},
+        //         {title: 'Title Kolom-8', className: 'Table1classNameCol8', colIndex: 7, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 8'},
+        //         {title: 'Title Kolom-5', className: 'Table1classNameCol5', colIndex: 4, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 5'},
+        //         {title: 'Title Kolom-6', className: 'Table1classNameCol6', colIndex: 5, sort: true, tooltip: true, dataTooltip: 'test Tooltip column 6'},
+        //     ]
+        // });
+        $('.select-custom').select2();
+        $('.info-tooltip').tooltip();
+    });
+
+</script>
+</html>

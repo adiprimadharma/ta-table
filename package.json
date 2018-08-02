@@ -1,0 +1,42 @@
+{
+  "name": "ta-table",
+  "version": "1.0.18",
+  "description": "TopAds Table for Dashboard v1.0.0",
+  "main": "build/tatable.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "jquery": "^3.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "lint": "eslint src test",
+    "publish": "npm run build"
+  },
+  "keywords": [
+    "table"
+  ],
+  "author": "@adiprimadharma & @dikasetiadi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "files": [
+    "build/*.js",
+    "build/*.css"
+  ]
+}

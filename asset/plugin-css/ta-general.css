@@ -1,0 +1,779 @@
+body {
+    padding-top: 51px;
+    font-family: "open sans", tahoma, sans-serif;
+    background: #f8f9fb;
+}
+* {
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: rgba(0,0,0,0.7);
+}
+a {
+    color: #42b549;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #e55b36;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+h4,
+h5 {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+th,
+td {
+    white-space: nowrap;
+}
+
+
+/* Header / Nav  */
+
+.sprite-topads {
+    background: url(https://ta.tokopedia.com/style/img/topads-sprite.png);
+    background-size: 150px;
+}
+
+.icon-close {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -106px;
+    cursor: pointer;
+}
+
+.i-arrow-down-white {
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    background-position: -32px -27px;
+}
+
+.icon-tooltip {
+    background-size: 150px;
+    background-position: -126px -81px;
+    font-size: 18px;
+    position: absolute;
+    top: -3px;
+    margin-left: 3px;
+}
+
+.i-search {
+    background-position: -100px -27px;
+    width: 17px;
+    height: 17px;
+    display: block;
+    margin: auto;
+}
+
+.site-logo {
+    width: 220px;
+    height: 30px;
+    background-position: 0px -6px;
+    background-size: 220px;
+}
+
+.bridge-widget {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 13px 10px 10px;
+    cursor: pointer;
+}
+
+.bw-button {
+    position: relative;
+    z-index: 1001;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 0;
+    background-color: transparent;
+    background-image: url(https://ecs7.tokopedia.net/img/recharge/bridge-widget-sprite-2.png);
+    background-position: -120px 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: opacity .25s ease;
+}
+
+.bw-button:hover {
+    opacity: .8;
+}
+
+.bw-container {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 1000;
+    display: none;
+    box-sizing: border-box;
+    padding: 20px 20px 10px;
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.bw-container:before {
+    position: absolute;
+    display: block;
+    border-style: solid;
+    content: '';
+    top: -33px;
+    right: 2px;
+    border-width: 20px;
+    border-color: transparent transparent #fff;
+}
+
+.bw-item {
+    display: block;
+    float: left;
+    text-align: center;
+    margin-bottom: 3px;
+    width: 104px;
+    height: 104px;
+}
+
+.bw-item:hover {
+    box-shadow: 0 0 5px 2px rgba(204, 204, 204, .48);
+}
+
+.bw-icon__wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 0;
+    background-color: #fff;
+    transition: background .25s ease;
+}
+
+.bw-icon {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 37px;
+}
+
+.bw-icon__text {
+    display: block;
+    margin: 0;
+    padding: 10px 0 20px;
+    color: #787878;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.bw-icon-toped {
+    background-image: url('https://ecs7.tokopedia.net/img/icon_tokopedia-toped@2x.png');
+}
+
+.bw-icon-official {
+    background-image: url('https://ecs7.tokopedia.net/img/icon_tokopedia-official-store@2x.png');
+    background-size: 45px;
+}
+
+.bw-icon-pulsa {
+    background-image: url('https://ecs7.tokopedia.net/img/icon_tokopedia-pulsa@2x.png');
+    background-size: 45px;
+}
+
+.bw-icon-tiket {
+    background-image: url('https://ecs7.tokopedia.net/img/icon_tokopedia-tiket@2x.png');
+    background-size: 30px
+}
+
+.bw-icon-help {
+    background-image: url('https://ecs7.tokopedia.net/img/icon_tokopedia-bantuan@2x.png');
+    background-size: 38px;
+}
+
+.bw-icon-listrik {
+    background-image: url(https://ecs7.tokopedia.net/img/recharge/bridge-widget-sprite-2.png);
+    background-position: 5px -60px;
+    background-size: auto;
+}
+
+.topads-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #42b549;
+    z-index: 1111;
+    padding: 0 30px;
+}
+
+.topads-nav__item {
+    float: left;
+    margin-left: 20px;
+}
+
+
+.topads-avatar {
+     padding: 1px 10px 0; 
+     cursor: pointer; 
+}
+
+.topads-avatar__img-container {
+    border-radius: 3px;
+    margin: 11px 0;
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.topads-info {
+    position: relative;
+    margin: -1px -1px 5px;
+    padding: 10px 20px 0;
+    border-color: #d5d5d5;
+    border-style: solid;
+    border-width: 0 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #fff;
+    z-index: 1001;
+}
+
+.topads-info__name {
+    overflow: hidden;
+    color: #515151;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.topads-info__name:hover {
+    color: #ff5722;
+}
+
+.topads-icon--logout {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,IDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTAgNTAnPjxwYXRoIGQ9J00zNy43IDQ0LjhIMTNWNDNoMjQuN2MzIDAgMy4zLS42IDMuMy0yLjVWOS40YzAtMS44LS4zLTIuNC0zLjMtMi40SDEzVjUuMmgyNC43YzMuMSAwIDUgLjcgNSA0LjJ2MzEuMWMwIDMuNi0xLjkgNC4zLTUgNC4zeicgZmlsbD0nIzY3Njc2NycvPjxwYXRoIGQ9J004LjMgMjMuNWMzLjYtMy41IDcuMS03LjEgMTAuNy0xMC43IDEtMSAyLTEuMiAzLjItLjEgMi45IDIuOCAzIDMgLjEgNS44LS45LjktMS45IDEuOS0zLjIgMy4xaDEzLjVjMi40IDAgMi44LjQgMi43IDMuNCAwIDIuNi0uNCAzLTIuNyAzLjFIMTkuMmwzLjYgMy42Yy44LjggMi4xIDEuNiAxLjUgMi43LS43IDEuNS0xLjkgMi43LTMuNSAzLjMtLjcuMy0xLjItLjItMS43LS43LTMuNi0zLjQtNy4xLTctMTAuNy0xMC42LTEtLjktMS4xLTEuOS0uMS0yLjl6JyBmaWxsPScjZTBlMWUwJy8+PHBhdGggZD0nTTIwLjQgMzguNGMtLjcgMC0xLjItLjUtMS42LS45bC0yLjYtMi42Yy0yLjctMi43LTUuNC01LjUtOC4yLTguMi0uNi0uNi0uOS0xLjItLjktMS44IDAtLjYuMy0xLjIuOS0xLjdsOS41LTkuNSAxLjItMS4yYzEuMy0xLjMgMi41LTEuMyAzLjgtLjEgMS42IDEuNSAyLjMgMi4zIDIuNCAzLjIgMCAuOS0uOCAxLjctMi4yIDMuMmwtMS45IDEuOS0uNS41SDMyLjdjMS4yIDAgMiAuMSAyLjUuNi42LjYuNyAxLjUuNyAzLjIgMCAyLjgtLjYgMy41LTMuMiAzLjVIMjAuM2wuNC40IDIuNSAyLjVjLjEuMS4zLjMuNS40LjcuNyAxLjcgMS42IDEuMiAyLjgtLjggMS43LTIuMSAyLjktMy43IDMuNS0uNC4zLS42LjMtLjguM3ptLjItMjUuOWMtLjQgMC0uOC4yLTEuMy43bC0xLjIgMS4yLTkuNSA5LjVjLS40LjQtLjYuNy0uNiAxLjEgMCAuNC4yLjcuNiAxLjIgMi43IDIuNyA1LjUgNS40IDguMiA4LjJsMi42IDIuNmMuNS41LjguNyAxLjIuNiAxLjQtLjUgMi42LTEuNyAzLjMtMy4xLjMtLjYtLjItMS4xLTEtMS44bC0uNS0uNS0yLjUtMi41LTEuOS0xLjloMTQuNWMxLjkgMCAyLjMtLjIgMi4zLTIuNiAwLTEuNC0uMS0yLjItLjQtMi42LS4zLS4zLS44LS40LTEuOS0uNEgxOGwyLjEtMiAxLjktMS45YzEuMi0xLjIgMi0yIDItMi42IDAtLjYtLjgtMS4zLTIuMS0yLjYtLjUtLjQtLjktLjYtMS4zLS42eicgZmlsbD0nIzY3Njc2NycvPjxwYXRoIGQ9J00zNy44IDQ0LjhIMTMuMmMtMy4xIDAtNS0uNy01LTQuMnYtNS4yYzAtLjUuNC0uOS45LS45cy45LjQuOS45djUuMmMwIDEuOS4zIDIuNSAzLjMgMi41SDM4YzMgMCAzLjMtLjYgMy4zLTIuNVY5LjVDNDEuMyA3LjYgNDEgNyAzOCA3SDEzLjJjLTMgMC0zLjMuNi0zLjMgMi41djUuM2MwIC41LS40LjktLjkuOXMtLjktLjQtLjktLjlWOS41YzAtMy41IDEuOS00LjIgNS00LjJoMjQuN2MzLjEgMCA1IC43IDUgNC4ydjMxLjFjMCAzLjUtMS45IDQuMi01IDQuMnonIGZpbGw9JyM2NzY3NjcnLz48L3N2Zz4=);
+}
+
+.u-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.topads-info__tokocash-link {
+    color: #000;
+}
+
+.topads-info__tokocash-link:hover {
+    color: #43a94f;
+}
+
+.tokocash-activate__btn,
+.tokocash-topup__btn {
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    line-height: 3em;
+    width: 200px;
+    border-radius: 3px;
+    display: block;
+}
+
+.tokocash-activate__btn:hover,
+.tokocash-topup__btn:hover {
+    color: #fff;
+    background-color: #ef430c;
+}
+
+.topads-info__amount {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.topads-info__saldo {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.topads-icon--cash {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,IDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTAgNTAnPjxwYXRoIGQ9J00zNC44IDM5LjhjLTMuNyAwLTcuMi0xLTEwLjYtMS45LTMuMi0uOS02LjItMS43LTktMS43LTEuOCAwLTIuNC4zLTMuOSAxLjFsLS41LjNjLTEgLjUtMi4zLjUtMy4zLS4xcy0xLjYtMS43LTEuNi0yLjlWMTUuNGMwLTMuOCA0LjgtNS4xIDkuMi01LjEgMy43IDAgNy4yIDEgMTAuNiAxLjkgMy4xLjkgNi4xIDEuNyA4LjkgMS43IDEuOCAwIDIuNC0uMyAzLjktMS4xbC41LS4zYzEtLjUgMi4zLS41IDMuMy4xczEuNiAxLjcgMS42IDIuOXYxN2MwIC4yLS4xLjMtLjIuNWwtNi42IDYuNmMtLjEuMS0uMi4yLS40LjItLjUtLjEtMS4xIDAtMS45IDB6bS0xOS42LTQuOWMzIDAgNi4xLjggOS4zIDEuNyAzLjMuOSA2LjggMS44IDEwLjMgMS44LjYgMCAxLjIgMCAxLjYtLjFsNi4zLTYuM1YxNS40YzAtLjctLjQtMS40LTEtMS44LS42LS40LTEuNC0uNC0yLS4xbC0uNS4zYy0xLjUuOC0yLjMgMS4zLTQuNSAxLjMtMyAwLTYuMS0uOC05LjMtMS43LTMuMy0uOS02LjgtMS44LTEwLjMtMS44LTEuMyAwLTcuOS4yLTcuOSAzLjh2MTkuM2MwIC43LjQgMS40IDEgMS44LjYuNCAxLjQuNCAyIC4xbC41LS4zYzEuNS0uOSAyLjQtMS40IDQuNS0xLjR6JyBmaWxsPScjNjc2NzY3Jy8+PHBhdGggZD0nTTM2LjkgMTguM2MtLjcgMC0xLS4yLTEuMS0uMy0uMS0uMS0uMi0uMy0uMS0uNS4xLS4xLjMtLjIuNC0uMSAwIDAgMSAuNiAzLjYtLjkuMi0uMS40IDAgLjQuMS4xLjIgMCAuNC0uMS40LTEuMyAxLTIuNCAxLjMtMy4xIDEuM3pNMTAuMSAzMy43Yy0uMSAwLS4yLS4xLS4zLS4yLS4xLS4yIDAtLjQuMS0uNCAzLTEuOCA0LjItMSA0LjMtLjkuMS4xLjIuMy4xLjUtLjEuMS0uMy4yLS40LjEgMCAwLTEuMS0uNi0zLjYuOWgtLjJ6JyBmaWxsPScjNjc2NzY3Jy8+PGcgZmlsbD0nIzY3Njc2Nyc+PHBhdGggZD0nTTIzLjEgMjMuN2wuMy0uM2MuNS0uNS44LTEuMi44LTJzLS4zLTEuNS0uOC0yYy0uNS0uNi0xLjItLjgtMi0uOGgtMi45Yy0uMiAwLS4zLjEtLjQuMi0uMS4xLS4yLjItLjIuNFYyOGMwIC4yLjEuMy4yLjQuMS4xLjIuMi40LjJzLjMtLjEuNC0uMmMuMS0uMS4yLS4yLjItLjR2LTMuOEgyMmwyLjMgNC4xYy4xLjEuMi4yLjQuM2guMWMuMSAwIC4yIDAgLjMtLjFsLjMtLjNWMjhjMC0uMSAwLS4yLS4xLS4zbC0yLjItNHptLTQtNGgyLjNjLjUgMCAuOS4yIDEuMi41LjMuMy41LjcuNSAxLjJzLS4yLjktLjUgMS4yYy0uMy4zLS43LjUtMS4yLjVoLTIuM3YtMy40ek0zMi4xIDIyLjdjLS43LS43LTEuNS0xLTIuNC0xLS45IDAtMS43LjMtMi40IDEtLjYuNy0xIDEuNS0xIDIuNHY1LjhjMCAuMi4xLjMuMi40LjEuMS4yLjIuNC4yLjEgMCAuMy0uMS40LS4yLjEtLjEuMi0uMi4yLS40di0zLjFsLjUuM2MuNS4zIDEuMS41IDEuNy41LjkgMCAxLjctLjMgMi40LTFzMS0xLjUgMS0yLjRjMC0xLS40LTEuOC0xLTIuNXptLTIuNCA0LjdjLS42IDAtMS4yLS4yLTEuNi0uNy0uNC0uNC0uNi0uOC0uNi0xLjNWMjVjMC0uNi4yLTEuMS42LTEuNS40LS41IDEtLjcgMS42LS43LjYgMCAxLjIuMiAxLjYuNy40LjUuNyAxIC43IDEuNiAwIC42LS4yIDEuMi0uNyAxLjYtLjQuNS0xIC43LTEuNi43eicvPjwvZz48cGF0aCBkPSdNNDMuMyAzMi40TDM2LjcgMzl2LTQuNGMwLTEuMiAxLTIuMiAyLjItMi4yaDQuNHonIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBmaWxsPScjZTBlMWUwJy8+PHBhdGggZD0nTTM2LjcgMzkuM2gtLjFjLS4xLS4xLS4yLS4yLS4yLS4zdi00LjRjMC0xLjQgMS4xLTIuNSAyLjUtMi41aDQuNGMuMSAwIC4yLjEuMy4yLjEuMSAwIC4zLS4xLjRMMzcgMzkuMmMtLjEuMS0uMi4xLS4zLjF6bS40LTQuOHMwIC4xIDAgMHYzLjdsNS41LTUuNUgzOWMtMS4xIDAtMS45LjgtMS45IDEuOHonIGZpbGw9JyM2NzY3NjcnLz48L3N2Zz4=);
+}
+
+.topads-info__value--1 {
+    margin: 5px 0 0;
+    color: #515151;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.topads-info__value--2 {
+    margin: 5px 0;
+    color: #42b549;
+    font-size: 16px;
+    transition: opacity .25s ease;
+}
+
+.topads-old-version a {
+    color: #FFF;
+    margin: 15px 10px;
+    display: block;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+}
+
+.topads-old-version a:hover {
+    opacity: 0.8;
+}
+
+.topads-back-to-tokopedia a {
+    color: #FFF;
+    margin: 15px 10px;
+    display: block;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+}
+
+.topads-back-to-tokopedia a:hover {
+    opacity: 0.8;
+}
+
+.topads-login a {
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 20px;
+    margin: 8px 0;
+    font-size: 13px;
+    transition: background .2s linear;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+}
+
+.topads-login a:hover {
+    background: #FFF;
+    color: #42B549;
+}
+
+.topads-help a {
+    color: #fff;
+    margin: 15px 10px;
+    display: block;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+}
+
+.topads-help a:hover {
+    opacity: .8;
+}
+
+
+/* Body & Container  */
+
+.topads-body {
+    color: rgba(0,0,0,0.54);
+}
+
+.add-promo_container .submit-message {
+    width: 68%;
+}
+
+@media (min-width: 960px) {
+    .add-promo_container {
+        width: 90%;
+    }
+    section.col-right {
+        width: 26.5%;
+        right: 5.5%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .add-promo_container {
+        width: 75%;
+    }
+    section.col-right {
+        width: 21.5%;
+        right: 13.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.container .row-content {
+    margin: 0 auto;
+}
+
+
+/* Section  */
+
+section.col-left {
+    border: 1px solid #E0E0E0;
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    padding: 20px;
+    background-color: white;
+    color: #505050;
+    width: 68%;
+    margin-bottom: 20px;
+}
+
+.section-info {
+    padding-top: 10px;
+}
+
+.section-detail {
+    padding: 0 0px;
+    font-size: 13px;
+}
+
+.section-detail .section-detail-row {
+    margin: 20px 0px;
+    display: flex;
+}
+
+section.col-right {
+    width: 21.5%;
+    position: fixed;
+    right: 13.5%;
+}
+
+section.col-action {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.topads-section-header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px 2px 0 0;
+    display: table;
+    padding: 10px 20px;
+}
+
+.topads-section-body {
+    position: relative;
+}
+
+.topads-section-header-green {
+    background-color: #50C14E;
+    border-color: #50C14E;
+}
+
+.topads-section-header-blue {
+    background-color: #418BDF;
+    border-color: #418BDF;
+}
+
+.topads-section-header-yellow {
+    background-color: #F76B21;
+    border-color: #F76B21;
+}
+
+.topads-section-header .daterangebox {
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #3770b1;
+    font-size: 11px
+}
+
+
+/* Title  */
+
+.page-title {
+    margin: 20px 0;
+    color: #505050;
+}
+
+.topads-section-header h2 {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    letter-spacing: .4px;
+    margin: 0;
+    float: left;
+}
+
+/* Footer */
+
+.footer-wrapper-full {
+    background-color: #F8F8F8;
+    padding-top: 15px;
+    border-top: 1px solid #E0E0E0;
+    position: relative;
+    z-index: 40;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    -webkit-box-flex: 0;
+}
+
+#content-container {
+    padding: 20px;
+    margin-left: 80px;
+    -webkit-transition: margin .2s ease-in-out;
+    -o-transition: margin .2s ease-in-out;
+    transition: margin .2s ease-in-out;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 84vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+@media(min-width:1500px) {
+    #content-container { 
+        min-height: 86vh;
+    }
+}
+
+#content-container.sidebar-open {
+    margin-left: 194px;
+}
+
+.content-container-full {
+    background: #fff;
+}
+
+.content-flex {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    width: 100%;
+    -webkit-box-flex: 1;
+}
+
+nav#sidebar button#sidebar-toggle {
+    border:0;
+    background:0;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 10px;
+}
+
+nav#sidebar #sidebar-toggle .nav-icon {
+    width: 27px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+
+ 
+  nav#sidebar #sidebar-toggle .nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background: #42b549;
+    opacity: 1;
+    border-radius: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  
+  nav#sidebar #sidebar-toggle span:nth-child(1), nav#sidebar #sidebar-toggle span:nth-child(5) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  nav#sidebar #sidebar-toggle span:nth-child(2), nav#sidebar #sidebar-toggle span:nth-child(4) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(1),
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(2),
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(3),
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(4),
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(5) {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(2)  {
+    right: 0;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+  }
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(3) {
+      top: 8px;
+      left: 0;
+      width: 65%;
+      border-radius: 10px;
+  }
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(4) {
+    left: 0;
+    top: 16px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  nav#sidebar.minimize #sidebar-toggle .nav-icon span:nth-child(5) {
+    right: 0;
+    top: 16px;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  nav#sidebar #sidebar-toggle span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+  }
+  
+  nav#sidebar #sidebar-toggle span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+  
+  nav#sidebar #sidebar-toggle span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  nav#sidebar #sidebar-toggle span:nth-child(4) {
+    left: 5px;
+    top: 10.5px;
+    border-radius: 10px;
+  }
+  
+  nav#sidebar #sidebar-toggle span:nth-child(5) {
+    left: calc(50% - 5px);
+    top: 10.5px;
+    border-radius: 10px;
+  }
+  /* Select2 plugin */
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b,
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border: 0 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow:after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    top: 14px;
+    content: "\e941";
+    font-family: 'topads' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    background: none;
+    -webkit-font-smoothing: antialiased;
+    font-size: 7px;
+    margin-left: 5px;
+    display: block;
+}
+
+.select2-selection.has-error {
+    border-color: red !important;
+}
+.select2 .select2-selection:focus {
+    outline: none;
+}
+
+.filter-select,
+.custom-select {
+    width: 100%;
+}
+
+.filter-user,
+.filter-action,
+.select-group,
+.select-status {
+    width: 140px !important;
+}
+.topbar-logo-wrapper {
+    width: 157px;
+    height: 50px;
+    float: left;
+}
+.topbar-logo-wrapper a {
+    display: block;
+    padding: 0 0;
+    text-indent: -9999px;
+    line-height: 10px;
+}
+.sprite-topads {
+    background: url(https://ta.tokopedia.com/style/img/topads-sprite.png);
+    background-size: 150px;
+}
+.site-logo {
+    width: 220px;
+    height: 30px;
+    background-position: 0 -6px;
+    background-size: 220px;
+    display: block;
+}
+
