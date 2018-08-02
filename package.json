@@ -1,7 +1,7 @@
 {
   "name": "ta-table",
-  "version": "1.0.18",
-  "description": "TopAds Table for Dashboard v1.0.0",
+  "version": "1.0.19",
+  "description": "A Responsive and customable table for jQuery.",
   "main": "build/tatable.js",
   "dependencies": {},
   "peerDependencies": {
@@ -14,8 +14,15 @@
     "publish": "npm run build"
   },
   "keywords": [
-    "table"
+    "table",
+    "responsive",
+    "jquery",
+    "customable"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adiprimadharma/ta-table/"
+  },
   "author": "@adiprimadharma & @dikasetiadi",
   "license": "ISC",
   "devDependencies": {
@@ -36,7 +43,6 @@
     "webpack-cli": "^3.1.0"
   },
   "files": [
-    "build/*.js",
-    "build/*.css"
+    "build/*.js"
   ]
 }

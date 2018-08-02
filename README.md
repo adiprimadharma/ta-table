@@ -17,6 +17,7 @@ A Responsive and customable table for jQuery.
 
 ### npm
 
+Install the JQuery and ta-table packages.
 It's recommended to `require`/`import` the plugin as part of an existing webpack or browserify setup:
 
 ```
@@ -62,7 +63,7 @@ your application.
 
 ### Manual
 
-Clone the repository and run `npm install && npm run build`. This will generate
+Clone the UMD version `tatable.js` in `./build` folder.
 a UMD version of the plugin in `./build` that can be dropped into a project
 however you want.
 
@@ -75,7 +76,7 @@ however you want.
 
 ## Options
 
-**Note** COMING SOON --
+** --COMING SOON -- **
 <!-- 
 * **delay** - _(number)_ How long between each tab change. If set to 0 no timed change will happen _default_ `0`
 * **duration** - _(number)_ If set to greater than zero, then this will decide how long it takes to fade transition between tabs otherwise it will be instant _default_ `0`
